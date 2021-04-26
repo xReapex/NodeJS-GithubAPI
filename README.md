@@ -18,15 +18,15 @@ const client = new GithubAPI("GITHUB_API_TOKEN");
 async function main()
 {
     /* Retrieve Github User with Username */
-    await client.getUser('xReapex')
+    await client.getUser('xReapex');
     /* Will return User Object*/
     
     /* Retrieve Github Users Followers */
-    await client.getFollowers('xReapex')
+    await client.getFollowers('xReapex');
     /* Will return User(s) Object*/
 
     /* Check if User follow another */
-    await client.isFollowedBy('xReapex', 'xReapexTheFalse')
+    await client.isFollowedBy('xReapex', 'xReapexTheFalse');
     /* Will return Boolean: true/false */
 }
 
