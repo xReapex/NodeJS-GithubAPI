@@ -1,2 +1,2 @@
 # NodeJS-GithubAPI
-NPM wrapper for Github API
+♻️ NPM wrapper for Github API
