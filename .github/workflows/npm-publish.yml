@@ -1,7 +1,7 @@
 name: "🚀 Publish"
 
 on:
-    push:
+    release:
         branches:
           - master
 
