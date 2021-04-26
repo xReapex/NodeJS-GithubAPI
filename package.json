@@ -9,7 +9,6 @@
   "author": "Reapex",
   "license": "ISC",
   "dependencies": {
-    "@octokit/request": "^5.4.15",
-    "request": "^2.88.2"
+    "@octokit/request": "^5.4.15"
   }
 }
