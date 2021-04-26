@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v1.4.2
         with:
           node-version: 12
-          registry-url: https://www.npmjs.com/package/@reapex/github-api
+          registry-url: https://registry.npmjs.org
       - name: 🚀 publish
         run: npm publish --access public
         env:
