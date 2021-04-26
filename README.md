@@ -1,12 +1,18 @@
 # NodeJS-GithubAPI
 
-♻️ NPM wrapper for Github API
+# Installation :
+
+Via NPM : ``npm install @reapex/github-api``
+
+# Import Package :
+```js
+const { GithubAPI } = require("@reapex/github-api");
+const client = new GithubAPI("GITHUB_API_TOKEN");
+```
 
 # Basic Usage :
 
 ```js
-const { GithubAPI } = require("@reapex/github-api");
-const client = new GithubAPI("GITHUB_API_TOKEN");
 
 /* All methods needs to be in Async Function */
 async function main()
