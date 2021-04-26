@@ -1,4 +1,4 @@
-# NodeJS-GithubAPI
+# NodeJS Package - @reapex/github-api
 
 # Installation :
 
