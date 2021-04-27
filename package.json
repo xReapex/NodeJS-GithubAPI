@@ -10,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@octokit/request": "^5.4.15"
-  }
+  },
+  "keywords": ["github", "github-wrapper", "github-api", "repository", "github-users"]
 }
