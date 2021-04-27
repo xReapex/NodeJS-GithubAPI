@@ -43,6 +43,6 @@ main()
 
 ```js
 /* Search Repositories */
-    await client.searchRepositories("@reapex/github-api", "10", "1", /* Optionnal (stars, forks, help-wanted-issues) Default (best-match) */ "asc");
+await client.searchRepositories("@reapex/github-api", "10", "1", /* Optionnal (stars, forks, help-wanted-issues) Default (best-match) */ "asc");
 /* Will return Repository(ies) Object */
 ```
