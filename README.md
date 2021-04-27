@@ -2,7 +2,7 @@
 
 # Documentation :
 
-Here you can find the [docs](https://www.npmjs.com/package/@reapex/github-api)
+- Here you can find the [docs](https://www.npmjs.com/package/@reapex/github-api)
 
 # Installation :
 
