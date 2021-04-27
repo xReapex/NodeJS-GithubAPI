@@ -2,7 +2,7 @@
 
 # Installation :
 
-Via NPM : ``npm install @reapex/github-api``
+- Via NPM : ``npm install @reapex/github-api``
 
 # Import Package :
 ```js
