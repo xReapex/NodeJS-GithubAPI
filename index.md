@@ -1,37 +1,54 @@
-## Welcome to GitHub Page
+## @xReapex/NodeJS-GithubAPI
 
-You can use the [editor on GitHub](https://github.com/xReapex/NodeJS-GithubAPI/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Communicate with the Github API in a simple, clear and intuitive way from your NodeJS application using useful and properly documented functions.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Documentation :
 
-### Markdown
+- Here you can find the [docs](https://www.npmjs.com/package/@reapex/github-api)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Installation :
 
-```markdown
-Syntax highlighted code block
+- Via NPM : ``npm install @reapex/github-api``
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Import Package :
+```js
+const { GithubAPI } = require("@reapex/github-api");
+const client = new GithubAPI("GITHUB_API_TOKEN");
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Basic Usage :
 
-### Jekyll Themes
+```js
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xReapex/NodeJS-GithubAPI/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+/* All methods needs to be in Async Function */
+async function main()
+{
+    /* Retrieve Github User with Username */
+    await client.getUser('xReapex');
+    /* Will return User Object */
+    
+    /* Retrieve Github Users Followers */
+    await client.getFollowers('xReapex');
+    /* Will return User(s) Object */
 
-### Support or Contact
+    /* Check if User follow another */
+    await client.isFollowedBy('xReapex', 'xReapexTheFalse');
+    /* Will return Boolean: true/false */
+    
+    /* Retrieve Users followed by User */
+    await client.getFollowing('xReapex');
+    /* Will return User(s) Object */
+}
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+main()
+```
+
+### Search Functions :
+
+- Find repositories with ``name``, ``resultats_per_page``, ``pages`` and ``sort`` ! 
+
+```js
+/* Search Repositories */
+await client.searchRepositories("@reapex/github-api", "10", "1", /* Optionnal (stars, forks, help-wanted-issues) Default (best-match) */ "asc");
+/* Will return Repository(ies) Object */
+```
