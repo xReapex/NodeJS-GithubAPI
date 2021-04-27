@@ -1,5 +1,9 @@
 # NodeJS Package - @reapex/github-api
 
+# Documentation :
+
+Here you can find the [docs](https://www.npmjs.com/package/@reapex/github-api)
+
 # Installation :
 
 - Via NPM : ``npm install @reapex/github-api``
