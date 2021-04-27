@@ -11,5 +11,8 @@
   "dependencies": {
     "@octokit/request": "^5.4.15"
   },
+  "repository": {
+    "url": "git://github.com/xReapex/NodeJS-GithubAPI.git"
+  },
   "keywords": ["github", "github-wrapper", "github-api", "repository", "github-users"]
 }
