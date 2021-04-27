@@ -1,22 +1,22 @@
-## @xReapex/NodeJS-GithubAPI
+# @xReapex/NodeJS-GithubAPI
 
 Communicate with the Github API in a simple, clear and intuitive way from your NodeJS application using useful and properly documented functions.
 
-# Documentation :
+## Documentation :
 
 - Here you can find the [Package](https://www.npmjs.com/package/@reapex/github-api)
 
-# Installation :
+## Installation :
 
 - Via NPM : ``npm install @reapex/github-api``
 
-# Import Package :
+## Import Package :
 ```js
 const { GithubAPI } = require("@reapex/github-api");
 const client = new GithubAPI("GITHUB_API_TOKEN");
 ```
 
-# Basic Usage :
+## Basic Usage :
 
 ```js
 
@@ -43,7 +43,7 @@ async function main()
 main()
 ```
 
-# Search Functions :
+## Search Functions :
 
 - Find repositories with ``name``, ``resultats_per_page``, ``pages`` and ``sort`` ! 
 
