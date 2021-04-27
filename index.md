@@ -1,5 +1,3 @@
-<title>NodeJS-GithubAPI - Docs</title>
-
 ## @xReapex/NodeJS-GithubAPI
 
 Communicate with the Github API in a simple, clear and intuitive way from your NodeJS application using useful and properly documented functions.
