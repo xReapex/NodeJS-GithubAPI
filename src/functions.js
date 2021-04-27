@@ -25,6 +25,13 @@ class Functions
             return false;
         }
     }
+
+    async getFollowing(username) {
+        let result = await this.requestWithAuth("GET /users/{username}/following", {
+            username: username,
+        });
+        return result.data;
+    }
 }
 
 module.exports = {
