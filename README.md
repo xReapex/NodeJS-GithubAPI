@@ -2,7 +2,7 @@
 
 # Installation :
 
-Via NPM : ``npm install @reapex/github-api``
+- Via NPM : ``npm install @reapex/github-api``
 
 # Import Package :
 ```js
@@ -35,4 +35,14 @@ async function main()
 }
 
 main()
+```
+
+# Search Functions :
+
+- Find repositories with ``name``, ``resultats_per_page``, ``pages`` and ``sort`` ! 
+
+```js
+/* Search Repositories */
+await client.searchRepositories("@reapex/github-api", "10", "1", /* Optionnal (stars, forks, help-wanted-issues) Default (best-match) */ "asc");
+/* Will return Repository(ies) Object */
 ```
