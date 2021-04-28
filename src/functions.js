@@ -33,9 +33,17 @@ class Functions {
 
     /* SEARCH */
     async searchRepositories(name, per_page, page, sort = 'best-match') {
-
         let result = await this.requestWithAuth('GET /search/repositories', {
             q: name,
+            sort: sort,
+            per_page: per_page,
+            page: page
+          })
+        return result.data;
+    }
+    async searchCommit(commit, per_page, page, sort = 'best-match') {
+        let result = await this.requestWithAuth('GET /search/repositories', {
+            q: commit,
             sort: sort,
             per_page: per_page,
             page: page
