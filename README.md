@@ -56,6 +56,7 @@ await client.searchRepositories("@reapex/github-api", "10", "1", /* Optionnal (s
 ```js
 /* Search Commits */
 await client.searchCommit("github-api", "10", "1", /* Optionnal (stars, forks, help-wanted-issues) Default (best-match) */ "asc");
-/* Will return Repository(ies) Object */```
+/* Will return Repository(ies) Object */
+```
 
 # Find all functions in docs !
